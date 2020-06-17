@@ -43,7 +43,6 @@ python decode.py
 You can use [docker](https://www.docker.com/) to run the algorithm  
 To build the docker image use the following command
 ```bash
-cd dnam
 sudo docker build -t dnam .
 ```
 Run the docker image as a container:
