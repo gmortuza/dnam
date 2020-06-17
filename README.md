@@ -47,11 +47,19 @@ sudo docker build -t dnam .
 ```
 Run the docker image as a container:
 ```bash
-sudo docker run -it dnam encode.py/decode.py [options]
+sudo docker run -it dnam {dnam/encode.py}/{dnam/decode.py} [options]
+```
+For example to encode a file
+```bash
+sudo docker run -it dnam dnam/encode.py -f /dnam/test -o test_output.out
 ```
 To copy the output file from docker container to host use:
 ```bash
-sudo docker [container_name]:/[output_file_name] .
+sudo docker cp [container_name]:/[output_file_name] [path/to/copy/the/file]
+```
+For example:
+```bash
+sudo docker cp 98be599794ac:/test_output.out ./
 ```
 To get the container_name use:
 ```bash
