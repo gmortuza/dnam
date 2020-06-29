@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<filters>
+  <!-- Valid filter names are frame, x, y, photons, sx, bg, and lpx. Every implemented filter must have 
+  "type" attribute as "absolute" or "percentile". "low" and "high" attributes must be set. Percentile
+  filters must have values between 0.0 and 1.0. Low must be lower than high
+  All units are pixels and photons
+  Filters will be applied in listed order.-->
+  <sx type="absolute" low="0.9" high="1.4"></sx>
+  <photons type="percentile" low=".01" high ="0.95"></photons>
+  <lpx type="percentile" low=".01" high="0.90"></lpx>
+</filters>
