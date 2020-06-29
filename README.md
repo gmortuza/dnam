@@ -22,7 +22,7 @@ and 3d_daostorm.
 
 ### Usage of localization code
 ```
-usage: dnam_mixed_origami_process.py [-h] [-f FILE] [-v] [-N NUMBER_CLUSTERS]
+python localization_preprocessing/dnam_mixed_origami_process.py [-h] [-f FILE] [-v] [-N NUMBER_CLUSTERS]
                                      [-s SKIP_CLUSTERS]
                                      [-d DRIFT_CORRECT_SIZE] [-ps PIXEL_SIZE]
                                      [-x XML] [-ft FILTER_FILE]
@@ -95,7 +95,7 @@ Example filter xml file:
 #### Encoding
 User the following command to encode a given file to a list of origami matrices
 ```
-python encode.py
+python error_correction/encode.py
                     -h , --help, show this help message and exit
                     -f , --file_in, file to encode
                     -o , --file_out, File to write the output
@@ -107,7 +107,7 @@ python encode.py
 #### Decoding
 Use the following command to decode any encoded file:
 ```
-python decode.py
+python error_correction/decode.py
                   -h, --help, show this help message and exit
                   -f , --file_in File to decode
                   -o , --file_out File to write output
