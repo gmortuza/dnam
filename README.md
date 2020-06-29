@@ -11,6 +11,7 @@ https://github.com/ZhuangLab/storm-analysis
 Script can be run on localization data (csv, txt, hdf5) without 3d_daostorm installed. Acceptable formats include ThunderStorm, Picasso,
 and 3d_daostorm.
 
+```
 usage: dnam_mixed_origami_process.py [-h] [-f FILE] [-v] [-N NUMBER_CLUSTERS]
                                      [-s SKIP_CLUSTERS]
                                      [-d DRIFT_CORRECT_SIZE] [-ps PIXEL_SIZE]
@@ -20,9 +21,10 @@ usage: dnam_mixed_origami_process.py [-h] [-f FILE] [-v] [-N NUMBER_CLUSTERS]
                                      [-md MIN_DRIFT_CLUSTERS]
                                      [-gdx GLOBAL_DELTA_X]
                                      [-st SCALED_THRESHOLD] [-rf]
+```
 
 dNAM origami process script
-
+```
 optional arguments:
   -h, --help            show this help message and exit
   -f FILE, --file FILE  File name
@@ -58,7 +60,8 @@ optional arguments:
                         Threshold for binary counts, as a fraction of the
                         average of the 10 brightest points
   -rf, --redo-fitting   Redo grid fitting, even if fitted grid data exists
-                        (has no effect on data without fits)
+                      (has no effect on data without fits)
+```
 
 Example filter xml file:
 ```xml
@@ -88,7 +91,7 @@ pip install numpy
 ### Usage
 #### Encoding
 User the following command to encode a given file to a list of origami matrices
-```python
+```
 python encode.py
                     -h , --help, show this help message and exit
                     -f , --file_in, file to encode
@@ -100,7 +103,7 @@ python encode.py
 ```
 #### Decoding
 Use the following command to decode any encoded file:
-```python
+```
 python decode.py
                   -h, --help, show this help message and exit
                   -f , --file_in File to decode

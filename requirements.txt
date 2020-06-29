@@ -1,0 +1,8 @@
+numpy
+scipy
+numpa
+matplotlib
+lmfit
+tqdm
+pyyaml
+h5py
