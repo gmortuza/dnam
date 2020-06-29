@@ -9,7 +9,7 @@ RUN pip install numba
 RUN pip install matplotlib
 RUN pip install lmfit
 RUN pip install tqdm
-RUN pip install yaml
+RUN pip install pyyaml
 RUN pip install h5py
 # Copy current directory file to docker container
 COPY ./ /
