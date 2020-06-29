@@ -1,16 +1,26 @@
 # dNAM - digital Nucleic Acid Memory
-This repository contains the encoding and decoding algorithm of dNAM.
+This repository contains the error correction code and preprocessing code for dNAM
 
 ## Localization preprocessing analysis
-### Requirements:
 
-numpy, scipy, numba, matplotlib, lmfit, tqdm, yaml, h5py
+### Requirements:
+The codes are tested with **python 3.7**  
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required packages
+```bash
+pip install numpy scipy numba matplotlib lmfit tqdm yaml h5py
+
+```
+Or use the requirements.txt file:
+```bash
+pip install -r requirements.txt
+```
 
 (optional) To import PAINT/STORM movies (nd2, spe, tif, dax) directly into script, 3d_daostorm must be installed from
 https://github.com/ZhuangLab/storm-analysis
 Script can be run on localization data (csv, txt, hdf5) without 3d_daostorm installed. Acceptable formats include ThunderStorm, Picasso,
 and 3d_daostorm.
 
+### Usage of localization code
 ```
 usage: dnam_mixed_origami_process.py [-h] [-f FILE] [-v] [-N NUMBER_CLUSTERS]
                                      [-s SKIP_CLUSTERS]
@@ -81,14 +91,7 @@ Example filter xml file:
 
 ## Error correction encoding/decoding algorithm
 
-### Requirements:
-The codes are tested with **python 3.7**  
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install numpy.
-```bash
-pip install numpy
-```
-
-### Usage
+### Usage of error correction code
 #### Encoding
 User the following command to encode a given file to a list of origami matrices
 ```
