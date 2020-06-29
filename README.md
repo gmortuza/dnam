@@ -77,6 +77,7 @@ Example filter xml file:
 
 
 ## Error correction encoding/decoding algorithm
+
 ### Requirements:
 The codes are tested with **python 3.7**  
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install numpy.
@@ -123,11 +124,11 @@ sudo docker build -t dnam .
 ```
 Run the docker image as a container:
 ```bash
-sudo docker run -it dnam {error_correction/encode.py}/{error_correction/decode.py} [options]
+sudo docker run -it dnam {path/to/the/script/to_run} [options]
 ```
 For example to encode a file
 ```bash
-sudo docker run -it dnam error_correction/encode.py -f /dnam/test -o test_output.out
+sudo docker run -it dnam error_correction/encode.py -f test.txt -o test_output.out
 ```
 To copy the output file from docker container to host use:
 ```bash
